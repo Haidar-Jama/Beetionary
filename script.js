@@ -75,11 +75,11 @@ const displayALL = (result) => {
           let data = getWordFromLocalStorage() ;
 
           if(data.some((w) => w.word == searchElement.value)){
-               swal("this word is already In the learned list  !");
+               swal("This word is in the learned list !");
                searchElement.value =""
                select.value= ""
                boxes.innerHTML=""
-               return ;
+               
           } else {
                data.push(lastData)
                localStorage.setItem("words",JSON.stringify(data))
@@ -171,12 +171,15 @@ const displayAnt = (result) => {
 searchBtn.addEventListener('click', (e)=>{
      const word = searchElement.value ;
       
-
+if(word.length==0){
+     swal("You didn't write anything!");
+}
 
       getData().then(data =>{
        
           let filterWord = data.filter ((item)=> item.word == word.toLowerCase());
 
+          
           
            if(select.value === "All"){
                displayALL(filterWord)
@@ -197,7 +200,8 @@ searchBtn.addEventListener('click', (e)=>{
       })
 
 
-  
+      
+      
      
 });
 
