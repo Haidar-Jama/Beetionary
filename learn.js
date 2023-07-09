@@ -43,18 +43,9 @@ const displayData =()=>{
 
    
 </div> `
-// const deleteData = () =>{
-//      let dData = this.data.indexof(data)
-//      console.log(dData);
 
-// } 
          
-removeBtn = document.querySelector("#removeBtn") 
-   
-removeBtn.addEventListener('click',(e)=>{
-     deleteData()
 
- })
 
           
      });
