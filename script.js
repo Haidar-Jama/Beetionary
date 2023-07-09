@@ -2,8 +2,7 @@ const searchElement = document.querySelector("#searchElement");
 const searchBtn = document.querySelector("#searchBtn")
 const boxes = document.querySelector(".boxes");
 const select = document.querySelector("select");
-const listCard = document.querySelector(".listCard");
-const list = document.querySelector(".list");
+
 
 
 
@@ -211,30 +210,7 @@ async function getData (){
 
      
 }
-// searchElement.addEventListener ('keyup', (e) =>{
-// //     console.log(e.target.value);
 
-// if(e.target.value.length === 0) {
-//      listCard.classList.add('d-none');
-     
-// }
-
- 
-// getData(e.target.value.trim().toLowerCase())
-// .then(data =>{
-       
-// // console.log(data);
-//    data.forEach(words => {
-//      list.innerHTML =+`<h4 class="target-words">${words.word} </h4>`
-//      ;
-//      console.log(words.word);
-//      listCard.classList.remove('d-none')    
-//    })
-  
-     
-
-// })
-// })
   
      
     

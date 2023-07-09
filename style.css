@@ -175,22 +175,7 @@ option{
      box-shadow: 10px 5px 5px rgba(22, 22, 22, 0.13);
 
 }
-.listCard{
-     display: flex;
-     flex-direction: column;
-     width: 600px;
-     height: max-content;
-     padding: 20px;
-     margin-top: 5px;
-     border-radius: 5px;
-     background-color: white;
-     box-shadow: 10px 5px 5px rgba(22, 22, 22, 0.13);
-}
 
-
-.d-none{
-     display: none;
-}
 h2{
      font-size: 15px;
      margin-bottom: 5px;
