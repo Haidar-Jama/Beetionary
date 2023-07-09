@@ -171,9 +171,7 @@ const displayAnt = (result) => {
 searchBtn.addEventListener('click', (e)=>{
      const word = searchElement.value ;
       
-if(word.length==0){
-     swal("You didn't write anything!");
-}
+
 
       getData().then(data =>{
        
